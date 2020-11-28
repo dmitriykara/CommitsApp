@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,14 @@
 		5ED0FF1C2572919C006CA301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED0FF1A2572919C006CA301 /* Main.storyboard */; };
 		5ED0FF1E2572919E006CA301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED0FF1D2572919E006CA301 /* Assets.xcassets */; };
 		5ED0FF212572919E006CA301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED0FF1F2572919E006CA301 /* LaunchScreen.storyboard */; };
+		5ED0FF542572A9DB006CA301 /* Commit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0FF4F2572A9DB006CA301 /* Commit+CoreDataProperties.swift */; };
+		5ED0FF562572A9DB006CA301 /* Commit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0FF522572A9DB006CA301 /* Commit+CoreDataClass.swift */; };
+		5ED0FF572572A9DB006CA301 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0FF532572A9DB006CA301 /* DetailViewController.swift */; };
+		5ED0FF6C2572AD01006CA301 /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0FF6A2572AD01006CA301 /* Author+CoreDataClass.swift */; };
+		5ED0FF6D2572AD01006CA301 /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0FF6B2572AD01006CA301 /* Author+CoreDataProperties.swift */; };
+		5ED0FF782572B0AE006CA301 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 5ED0FF772572B0AE006CA301 /* SwiftyJSON */; };
+		5ED0FFA82572D43C006CA301 /* CommitsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0FFA62572D43C006CA301 /* CommitsApp.xcdatamodeld */; };
+		5ED0FFAC2572D5F3006CA301 /* AuthorCommitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0FFAB2572D5F3006CA301 /* AuthorCommitsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,13 @@
 		5ED0FF1D2572919E006CA301 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5ED0FF202572919E006CA301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ED0FF222572919E006CA301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ED0FF4F2572A9DB006CA301 /* Commit+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commit+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5ED0FF522572A9DB006CA301 /* Commit+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commit+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5ED0FF532572A9DB006CA301 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5ED0FF6A2572AD01006CA301 /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5ED0FF6B2572AD01006CA301 /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5ED0FFA72572D43C006CA301 /* CommitsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CommitsApp.xcdatamodel; sourceTree = "<group>"; };
+		5ED0FFAB2572D5F3006CA301 /* AuthorCommitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorCommitsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED0FF782572B0AE006CA301 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,12 +73,19 @@
 			isa = PBXGroup;
 			children = (
 				5ED0FF142572919C006CA301 /* AppDelegate.swift */,
+				5ED0FF1D2572919E006CA301 /* Assets.xcassets */,
+				5ED0FF6A2572AD01006CA301 /* Author+CoreDataClass.swift */,
+				5ED0FF6B2572AD01006CA301 /* Author+CoreDataProperties.swift */,
+				5ED0FF522572A9DB006CA301 /* Commit+CoreDataClass.swift */,
+				5ED0FF4F2572A9DB006CA301 /* Commit+CoreDataProperties.swift */,
+				5ED0FF532572A9DB006CA301 /* DetailViewController.swift */,
+				5ED0FFAB2572D5F3006CA301 /* AuthorCommitsTableViewController.swift */,
+				5ED0FF222572919E006CA301 /* Info.plist */,
+				5ED0FF1F2572919E006CA301 /* LaunchScreen.storyboard */,
+				5ED0FF1A2572919C006CA301 /* Main.storyboard */,
 				5ED0FF162572919C006CA301 /* SceneDelegate.swift */,
 				5ED0FF182572919C006CA301 /* ViewController.swift */,
-				5ED0FF1A2572919C006CA301 /* Main.storyboard */,
-				5ED0FF1D2572919E006CA301 /* Assets.xcassets */,
-				5ED0FF1F2572919E006CA301 /* LaunchScreen.storyboard */,
-				5ED0FF222572919E006CA301 /* Info.plist */,
+				5ED0FFA62572D43C006CA301 /* CommitsApp.xcdatamodeld */,
 			);
 			path = CommitsApp;
 			sourceTree = "<group>";
@@ -83,6 +106,9 @@
 			dependencies = (
 			);
 			name = CommitsApp;
+			packageProductDependencies = (
+				5ED0FF772572B0AE006CA301 /* SwiftyJSON */,
+			);
 			productName = CommitsApp;
 			productReference = 5ED0FF112572919C006CA301 /* CommitsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 5ED0FF082572919C006CA301;
+			packageReferences = (
+				5ED0FF762572B0AE006CA301 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 5ED0FF122572919C006CA301 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +166,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED0FF562572A9DB006CA301 /* Commit+CoreDataClass.swift in Sources */,
+				5ED0FFAC2572D5F3006CA301 /* AuthorCommitsTableViewController.swift in Sources */,
 				5ED0FF192572919C006CA301 /* ViewController.swift in Sources */,
+				5ED0FF6D2572AD01006CA301 /* Author+CoreDataProperties.swift in Sources */,
+				5ED0FFA82572D43C006CA301 /* CommitsApp.xcdatamodeld in Sources */,
 				5ED0FF152572919C006CA301 /* AppDelegate.swift in Sources */,
+				5ED0FF542572A9DB006CA301 /* Commit+CoreDataProperties.swift in Sources */,
+				5ED0FF6C2572AD01006CA301 /* Author+CoreDataClass.swift in Sources */,
 				5ED0FF172572919C006CA301 /* SceneDelegate.swift in Sources */,
+				5ED0FF572572A9DB006CA301 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +377,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5ED0FF762572B0AE006CA301 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5ED0FF772572B0AE006CA301 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ED0FF762572B0AE006CA301 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		5ED0FFA62572D43C006CA301 /* CommitsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5ED0FFA72572D43C006CA301 /* CommitsApp.xcdatamodel */,
+			);
+			currentVersion = 5ED0FFA72572D43C006CA301 /* CommitsApp.xcdatamodel */;
+			path = CommitsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5ED0FF092572919C006CA301 /* Project object */;
 }
